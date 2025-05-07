@@ -1,0 +1,8 @@
+name = "my-worker-deploy-test"
+compatibility_date = "2021-01-01"
+main = "./src/index.ts"
+
+[vars]
+foo = "bar"
+
+secrets_store_secrets = [{ binding = "secret_binding", store_id = "gregs-store", secret_name = "my-secret" }]
